@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Home from '../../pages/Home/Home'
 import './Layout.css'
 import {AiOutlineDoubleLeft, AiOutlineDoubleRight} from 'react-icons/ai'
-import Menus from './Menus/Menus'
+import Menus from '../Menus/Menus'
 
 
 const Layout = () => {

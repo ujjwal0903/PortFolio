@@ -1,7 +1,7 @@
 import React from "react";
 import "./Menus.css";
+import NavLogo from '../../images/ujjwal.jpeg'
 import { FcHome, FcAbout, FcPortraitMode, FcBiotech, FcReadingEbook, FcVideoProjector, FcVoicePresentation, FcBusinessContact } from "react-icons/fc";
-// import {FcHome} from'react-icon/fc'
 
 const Menus = ({ toggle }) => {
   return (
@@ -10,8 +10,8 @@ const Menus = ({ toggle }) => {
         <>
           <div className="navbar-profile-pic">
             <img
-              src="C:/Users/AMIT GUPTA JI/Documents/Semester-V11/Profile/client/public/ujjwal.jpeg"
-              alt="prfile pic"
+              src = {NavLogo}
+              alt="pr0file pic"
             />
           </div>
           <div className="nav-items">

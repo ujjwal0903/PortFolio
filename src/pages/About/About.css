@@ -1,0 +1,31 @@
+.about{
+    margin: 30px 0px;
+    padding: 20px;
+    margin-left: 200px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.about-image img{
+    height: 400px;
+    width: 80%;
+    margin-left: 40px;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content h1{
+    color: gray;
+    font-family: cursive;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.about-content p{
+    text-align: justify;
+    padding: 20px; 
+}
