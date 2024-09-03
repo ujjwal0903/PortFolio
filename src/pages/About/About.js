@@ -4,7 +4,7 @@ import AboutLogo from "../../images/ujjwal.jpeg"
 function About() {
   return (
     <>
-      <div className="about">
+      <div id='about' className="about">
         <div className="row">
             <div className="col-md-6 col-xl-6 col-lg-6 col-xs-12 about-image">
                 <img src={AboutLogo} alt="Profile_Pic" />

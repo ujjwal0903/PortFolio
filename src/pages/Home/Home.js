@@ -6,7 +6,7 @@ import Resume from '../../assets/resume.txt'
 function Home() {
   return (
     <>
-      <div className="container-fluid home-container">
+      <div id="home" className="container-fluid home-container">
         <div className="container home-content">
           <h2>Hi,👋 i'm a</h2>
           <h1>

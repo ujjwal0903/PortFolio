@@ -27,3 +27,9 @@
 .nav-link:hover{
     color: rgb(183, 75, 13);
 } 
+.nav-link .active{
+    color: rgb(183, 75, 13);
+    border-left: 5px solid rgb(183, 75, 13);
+    padding-left: 10px;
+    text-decoration: none;
+}
