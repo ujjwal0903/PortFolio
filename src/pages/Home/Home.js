@@ -4,12 +4,13 @@ import "./home.css";
 import Typewriter from "typewriter-effect";
 import Resume from "../../assets/resume.txt";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import Fade from "react-reveal/Fade";
 
 function Home() {
   const [theme, setTheme] = useTheme();
   const handleTheme = () => {
-    setTheme((prevState) => (prevState === 'light' ? "dark" : "light"));
-  }
+    setTheme((prevState) => (prevState === "light" ? "dark" : "light"));
+  };
 
   return (
     <>
@@ -22,18 +23,27 @@ function Home() {
           )}
         </div>
         <div className="container home-content">
-          <h2>Hi,👋 i'm a</h2>
-          <h1>
-            <Typewriter
-              options={{
-                strings: ["Full Stack Developer", "Mern Stack Developer"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h1>
+          <Fade right>
+            <h2>Hi,👋 i'm a</h2>
+            <h1>
+              <Typewriter
+                options={{
+                  strings: ["Full Stack Developer", "Mern Stack Developer"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h1>
+          </Fade>
           <div className="home-buttons">
-            <button className="btn btn-hire">Hire Me</button>
+            <a
+              className="btn btn-hire" 
+              href="https://api.whatsapp.com/send?phone=9990243659"
+              rel = 'noreferrer'
+              target="_blank"
+            >
+              Hire Me
+            </a>
             <a
               className="btn btn-cv"
               href={Resume}

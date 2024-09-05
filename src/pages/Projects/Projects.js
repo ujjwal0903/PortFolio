@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.css";
-// import Spin from "react-reveal/Spin";
 
 const Projects = () => {
 return (
@@ -19,7 +18,6 @@ return (
         </p>
 
         <div className="row" id="ads">
-        {/* <Spin> */}
             <div className="col-md-4">
             <div className="card rounded">
                 <div className="card-image">
@@ -102,7 +100,6 @@ return (
                 </div>
             </div>
             </div>
-        {/* </Spin> */}
         </div>
     </div>
     </>

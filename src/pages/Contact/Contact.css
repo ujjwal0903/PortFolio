@@ -79,7 +79,7 @@ button:focus {
     color: white;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     .contact {
     margin: 0;
     padding: 0;
@@ -94,4 +94,4 @@ button:focus {
     align-items: center;
     justify-content: center;
     }
-} */
+}

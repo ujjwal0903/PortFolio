@@ -27,3 +27,15 @@
 
     transition: 1s;
 }
+
+@media (max-width: 600px) {
+    .techstack {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    width: 100%;
+    }
+    .techstack hr {
+    width: 280px;
+    }
+}

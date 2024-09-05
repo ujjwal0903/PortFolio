@@ -6,6 +6,7 @@ import Footer from "./pages/Footer/Footer";
 import Projects from "./pages/Projects/Projects";
 import TechStack from "./pages/Tech Stack/TechStack";
 import ScrollToTop from 'react-scroll-to-top'
+import MobileNav from "./components/MobileNav/MobileNav";
 import { useTheme } from "./components/context/ThemeContext";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
     <div id={theme}>
+      <MobileNav />
       <Layout />
       <div className="container">
         <About />

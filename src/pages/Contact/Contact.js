@@ -1,12 +1,8 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 // import { toast } from "react-toastify";
 // import axios from "axios";
 import "./Contact.css";
-// import Rotate from "react-reveal/Rotate";
-// import LightSpeed from "react-reveal/LightSpeed";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
-
-
 
 const Contact = () => {
 // const [name, setname] = useState("");
@@ -39,25 +35,22 @@ const Contact = () => {
 // };
 
 return (
-<>
+    <>
     <div className=" contact" id="contact">
-    <div className="card card0 border-0">
+        <div className="card card0 border-0">
         <div className="row">
-        <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12">
+            <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12">
             <div className="card1">
-            <div className="row border-line">
-                {/* <LightSpeed> */}
+                <div className="row border-line">
                 <img
                     src="https://img.freepik.com/free-photo/hot-line-contact-us-call-center-search-interface_53876-124009.jpg?w=2000"
                     alt="ocontact"
                     className="image"
                 />
-                {/* </LightSpeed> */}
+                </div>
             </div>
             </div>
-        </div>
-        <div className="col-lg-6 col-md-6">
-            {/* <Rotate> */}
+            <div className="col-lg-6 col-md-6">
             <div className="card2 d-flex card border-0 px-4 py-5">
                 <div className="row">
                 <div className="row">
@@ -105,7 +98,8 @@ return (
                     />
                 </div>
                 <div className="row px-3">
-                    <button className="button" 
+                    <button
+                    className="button"
                     // onClick={handleSubmit}
                     >
                     SEND MESSAGE
@@ -113,12 +107,11 @@ return (
                 </div>
                 </div>
             </div>
-            {/* </Rotate> */}
+            </div>
         </div>
         </div>
     </div>
-    </div>
-</>
+    </>
 );
 };
 
