@@ -1,6 +1,5 @@
 import React from "react";
 import "./Menus.css";
-import Fade from "react-reveal/Fade";
 import { Link } from "react-scroll";
 import {
   FcAbout,
@@ -22,7 +21,6 @@ const Menus = ({ toggle }) => {
                 alt="profile pic"
               />
             </div>
-          <Fade left>
             <div className="nav-items">
               <div className="nav-item">
                 <div className="nav-link">
@@ -113,7 +111,6 @@ const Menus = ({ toggle }) => {
                 </div>
               </div>
             </div>
-          </Fade>
         </>
       ) : (
         <>

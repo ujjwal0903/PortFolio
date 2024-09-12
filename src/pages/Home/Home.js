@@ -4,7 +4,6 @@ import "./home.css";
 import Typewriter from "typewriter-effect";
 import Resume from "../../assets/resume.txt";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import Fade from "react-reveal/Fade";
 import StarrySky from "../../components/Starry Sky/StarrySky";
 
 function Home() {
@@ -24,7 +23,6 @@ function Home() {
         )}
       </div>
       <div className="home-content">
-        <Fade right>
           <h2>Hi,👋 i'm a</h2>
           <h1>
             <Typewriter
@@ -35,7 +33,6 @@ function Home() {
               }}
             />
           </h1>
-        </Fade>
         <div className="home-buttons">
           <a
             className="btn btn-hire" 
