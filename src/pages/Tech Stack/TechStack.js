@@ -1,13 +1,10 @@
 import React from "react";
 import "./TechStack.css";
-// import RubberBand from "react-reveal/RubberBand";
-// import Fade from "react-reveal/Fade";
 import { TechstackList } from "../../utils/TechStackList";
 const Techstack = () => {
 return (
     <>
     <div className="container techstack" id="techstack">
-        {/* <RubberBand> */}
         <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
             Technology Stack
         </h2>
@@ -16,10 +13,8 @@ return (
             👉 including programming Languages, frameworks, databses, front-end
             and back-end tools, and APIs
         </p>
-        {/* </RubberBand> */}
         <div className="row">
         {TechstackList.map((tech) => (
-            // <Fade left>
             <div key={tech._id} className="col-md-3">
                 <div className="card m-2">
                 <div className="card-content">
@@ -36,7 +31,6 @@ return (
                 </div>
                 </div>
             </div>
-            // </Fade>
         ))}
         </div>
     </div>
