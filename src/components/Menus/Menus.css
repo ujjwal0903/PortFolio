@@ -1,11 +1,10 @@
 .navbar-profile-pic{
-    border-radius: 90px;
-    height: 150px;
-    width: 150px;
+    height: 80px;
+    width: 80px;
     display: flex;
     vertical-align: middle;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 0 25px 40px;
+    margin-top: 10px;
 }
 
 .nav-item{

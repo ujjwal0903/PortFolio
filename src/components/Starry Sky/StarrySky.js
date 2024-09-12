@@ -3,8 +3,8 @@ import "./StarrySky.css";
 import anime from "animejs/lib/anime.es.js"; // Install animejs via npm
 
 const StarrySky = () => {
-    const [numStars, setNumStars] = useState(80); // Number of stars
-    const [numShootingStars, setNumShootingStars] = useState(10); // Number of shooting stars
+    const numStars = 80; // Number of stars
+    const numShootingStars = 10; // Number of shooting stars
     const [vw, setVw] = useState(window.innerWidth); // Viewport width
     const [vh, setVh] = useState(window.innerHeight); // Viewport height
 
@@ -38,8 +38,8 @@ const StarrySky = () => {
         const shootingStars = () => {
             anime({
                 targets: ["#shootingstars .wish"],
-                translateX: ['-150px', '100vw'], 
-                translateY: ['-150px', '100vh'], 
+                translateX: ['-150px', '100vw'],
+                translateY: ['-150px', '100vh'],
                 width: ['5px', '5px'], // Change size to simulate streak
                 opacity: [1, 0], // Fade out effect
                 duration: 3000, // Duration of each shooting star

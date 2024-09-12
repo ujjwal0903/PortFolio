@@ -16,14 +16,11 @@ return (
         {/* Right Section: Social Links and Contact Details */}
         <div className="footer-right">
         <div className="footer-socials">
-            <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/ujjwal0903" target="_blank" rel="noopener noreferrer">
             GitHub
             </a>
-            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/ujjwal-singhal" target="_blank" rel="noopener noreferrer">
             LinkedIn
-            </a>
-            <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
-            Twitter
             </a>
         </div>
 

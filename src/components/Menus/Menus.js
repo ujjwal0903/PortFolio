@@ -6,10 +6,11 @@ import {
   FcBiotech,
   FcBusinessContact,
   FcHome,
-  FcPortraitMode,
   FcReadingEbook,
   FcVideoProjector,
 } from "react-icons/fc";
+import logo from "../../images/WebLogo.png"
+
 const Menus = ({ toggle }) => {
   return (
     <>
@@ -17,7 +18,7 @@ const Menus = ({ toggle }) => {
         <>
             <div className="navbar-profile-pic">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"
+                src={logo}
                 alt="profile pic"
               />
             </div>
@@ -83,18 +84,6 @@ const Menus = ({ toggle }) => {
                   >
                     <FcVideoProjector />
                     Projects
-                  </Link>
-                </div>
-                <div className="nav-link">
-                  <Link
-                    to="work"
-                    spy={true}
-                    smooth={true}
-                    offset={-100}
-                    duration={100}
-                  >
-                    <FcPortraitMode />
-                    Work Experince
                   </Link>
                 </div>
                 <div className="nav-link">
@@ -171,17 +160,6 @@ const Menus = ({ toggle }) => {
                   duration={100}
                 >
                   <FcVideoProjector />
-                </Link>
-              </div>
-              <div className="nav-link">
-                <Link
-                  to="work"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcPortraitMode />
                 </Link>
               </div>
               <div className="nav-link">

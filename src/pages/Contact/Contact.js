@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -49,7 +49,7 @@ const Contact = () => {
     return (
         <>
         <div className="contact" id="contact">
-            <div className="card card0 border-0">
+            <div className="card0 border-0">
             <div className="row">
                 <div className="col-md-6 col-lg-6 col-xl-6 col-sm-12">
                 <div className="card1">
@@ -67,9 +67,12 @@ const Contact = () => {
                     <div className="row">
                     <h6>
                         Contact With
-                        <BsLinkedin color="blue" size={30} className="ms-2" />
-                        <BsGithub color="black" size={30} className="ms-2" />
-                        <BsFacebook color="blue" size={30} className="ms-2" />
+                        <a href="https://github.com/ujjwal0903" target="_blank" rel="noopener noreferrer">
+                            <BsGithub color="black" size={30} className="ms-2" />
+                        </a>
+                        <a href="https://linkedin.com/in/ujjwal-singhal" target="_blank" rel="noopener noreferrer">
+                            <BsLinkedin color="blue" size={30} className="ms-2" />
+                        </a>
                     </h6>
                     </div>
 

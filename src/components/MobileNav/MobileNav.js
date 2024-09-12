@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { Link } from "react-scroll";
 import {
-FcAbout, FcBiotech, FcBusinessContact, FcHome, FcPortraitMode, FcReadingEbook, FcVideoProjector} from "react-icons/fc";
+FcAbout, FcBiotech, FcBusinessContact, FcHome, FcReadingEbook, FcVideoProjector} from "react-icons/fc";
 import "./MobileNav.css";
 
 const MobileNav = () => {
@@ -106,19 +106,6 @@ const MobileNav = () => {
                     >
                         <FcVideoProjector />
                         Projects
-                    </Link>
-                    </div>
-                    <div className="nav-link">
-                    <Link
-                        to="work"
-                        spy={true}
-                        smooth={true}
-                        offset={-100}
-                        duration={100}
-                        onClick={handleMenuClick}
-                    >
-                        <FcPortraitMode />
-                        Work Experince
                     </Link>
                     </div>
                     <div className="nav-link">
