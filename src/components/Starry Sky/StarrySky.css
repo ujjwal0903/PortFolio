@@ -1,0 +1,40 @@
+#StarApp {
+    position: absolute;
+    top: 0;
+    left: 90px;
+    width: 92%;
+    height: 84%;
+    overflow: hidden;
+}
+
+#sky {
+    position: absolute;
+    top: 0;
+    left: 90px;
+    width: 92%;
+    height: 84%;
+    z-index: 1; /* Ensure it's above other content */
+}
+
+.star {
+    opacity: 0.8;
+    transition: opacity 0.7s linear;
+}
+
+#wishingstars {
+    position: absolute;
+    top: 0;
+    left: 90px;
+    width: 92%;
+    height: 84%;
+    z-index: 2; /* Ensure it's above the twinkling stars */
+}
+
+.wish {
+    position: absolute;
+    width: 150px; /* Length of the shooting star streak */
+    height: 2px; /* Thickness of the shooting star streak */
+    background: linear-gradient(45deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
+    opacity: 0;
+    transform: rotate(45deg); /* Optional: for a diagonal streak effect */
+}

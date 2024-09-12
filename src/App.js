@@ -28,7 +28,7 @@ function App() {
       <ScrollToTop 
         smooth  
         color="#f29f67"
-        style={{backgroundColor:'#1e1e2c', borderRadius:'60px'}}
+        style={{backgroundColor:'#1e1e2c', borderRadius:'60px', top:'570px'}}
         />
     </>
   );
