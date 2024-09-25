@@ -5,12 +5,14 @@
 
 .sidebar {
     height: 100vh;
-    background-color: #1e1e2c;
+    background-color: #2a2a3e; /* Darker shade for light mode */
     width: 90px;
     position: fixed;
     z-index: 3;
+    transition: background-color 0.3s ease;
 }
 
+/* Sidebar Toggle */
 .sidebar-toggle {
     width: 200px;
     z-index: 3; 
@@ -23,10 +25,32 @@
     cursor: pointer;
 }
 
+/* Sidebar Icons */
 .sidebar-toggle-icons p svg {
     background-color: #f29f67;
     color: white;
     margin-top: 30px;
     position: absolute;
     z-index: 5; /* On top of sidebar for interaction */
+}
+
+#dark .sidebar {
+    background-color: #1e1e2c; /* Darker for dark mode */
+}
+
+#dark .sidebar-toggle-icons p svg {
+    background-color: #db7d42;
+    color: #ffffff;
+}
+
+#dark .sidebar-section {
+    border-right: 2px solid #333; /* Slight border contrast */
+}
+
+.sidebar:hover {
+    background-color: #1b1b29; /* Subtle hover for light mode */
+}
+
+#dark .sidebar:hover {
+    background-color: #292933; /* Slight change on hover for dark mode */
 }

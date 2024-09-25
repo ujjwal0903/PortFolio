@@ -5,9 +5,9 @@ const Projects = () => {
     return (
         <>
         <div className="container project" id="projects">
-            <h2 className="col-12 mt-3 mb-1 text-center text-uppercase">
+            <h1 className="col-12 mt-3 mb-1 text-center text-uppercase">
             TOP RECENT PROJECTS
-            </h2>
+            </h1>
             <hr />
             <p className="pb-3 text-center">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a
@@ -26,19 +26,18 @@ const Projects = () => {
                     />
                     </div>
                     <div className="card-image-overly m-auto mt-3">
-                    <span className="card-detail-badge">Node</span>
-                    <span className="card-detail-badge">Express</span>
+                    <span className="card-detail-badge">JavaScript</span>
                     <span className="card-detail-badge">React</span>
                     </div>
                     <div className="card-body text-center">
                     <div className="ad-title m-auto">
                         <h6 className="text-uppercase">
-                        EStreet (Shopping Website)
+                        EStreet
                         </h6>
                     </div>
                     <a
                         className="ad-btn"
-                        href="https://github.com/techinfo-youtube/ecommerce-app-2023"
+                        href="##"
                     >
                         View
                     </a>
@@ -55,16 +54,17 @@ const Projects = () => {
                     />
                     </div>
                     <div className="card-image-overly m-auto mt-3">
-                    <span className="card-detail-badge">React Native</span>
-                    <span className="card-detail-badge">IOS / ANDROID</span>
+                    <span className="card-detail-badge">React</span>
+                    <span className="card-detail-badge">Redux</span>
+                    <span className="card-detail-badge">Firebase</span>
                     </div>
                     <div className="card-body text-center">
                     <div className="ad-title m-auto">
-                        <h5 className="text-uppercase">Youtube Clone</h5>
+                        <h5 className="text-uppercase">Netflix Clone</h5>
                     </div>
                     <a
                         className="ad-btn"
-                        href="https://github.com/techinfo-youtube/ecommerce-app-2023"
+                        href="https://github.com/ujjwal0903/Netflix-GPT"
                     >
                         View
                     </a>
@@ -83,13 +83,16 @@ const Projects = () => {
                     <div className="card-image-overly m-auto mt-3">
                     <span className="card-detail-badge">Node</span>
                     <span className="card-detail-badge">Express</span>
-                    <span className="card-detail-badge">NoSQL</span>
+                    <span className="card-detail-badge">AppWrite</span>
                     </div>
                     <div className="card-body text-center">
                     <div className="ad-title m-auto">
                         <h5 className="text-uppercase">Blogging Website</h5>
                     </div>
-                    <a className="ad-btn" href="view">
+                    <a 
+                        className="ad-btn" 
+                        href="https://github.com/ujjwal0903/ReactJS/tree/main/Blogs4You"
+                    >
                         View
                     </a>
                     </div>
