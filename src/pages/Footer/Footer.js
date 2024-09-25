@@ -16,11 +16,14 @@ return (
         {/* Right Section: Social Links and Contact Details */}
         <div className="footer-right">
         <div className="footer-socials">
+            <a href="https://api.whatsapp.com/send?phone=9990243659" rel="noreferrer" target="_blank">
+                WhatsApp
+            </a>
             <a href="https://github.com/ujjwal0903" target="_blank" rel="noopener noreferrer">
-            GitHub
+                GitHub
             </a>
             <a href="https://linkedin.com/in/ujjwal-singhal" target="_blank" rel="noopener noreferrer">
-            LinkedIn
+                LinkedIn
             </a>
         </div>
 
@@ -33,7 +36,7 @@ return (
 
     {/* Bottom Section: Copyright */}
     <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Ujjwal. All rights reserved.</p>
     </div>
     </footer>
 );

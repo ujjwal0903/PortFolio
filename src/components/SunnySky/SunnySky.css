@@ -1,0 +1,21 @@
+.day-sky {
+  background: linear-gradient(120deg, #e0f7fa, #fdfbfb);
+  position: absolute;
+  left: 25px;
+  width: 98%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1; /* Background layer, below all content */
+}
+
+.glow {
+  position: absolute;
+  right: 15%;
+  left: 25px;
+  width: 98%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  border-radius: 50%;
+  opacity: 0.6;
+  z-index: 1; /* Same as background */
+}

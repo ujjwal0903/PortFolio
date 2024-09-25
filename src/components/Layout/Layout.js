@@ -29,7 +29,6 @@ const Layout = () => {
             </div>
             <div className='container'>
                 <Home />
-                <div className="hey"></div>
             </div>
         </div>
 

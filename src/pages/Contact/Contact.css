@@ -1,39 +1,53 @@
 .contact {
     margin-left: 130px;
     margin-bottom: 60px;
-    padding-top: 50px;
+    padding: 50px 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .card0 {
-    box-shadow: 0px 4px 8px 0px #757575;
-    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .card2 {
-    margin: 0px 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #fff; 
 }
 
 .card1 .image {
     padding: 30px;
-    margin-top: 30px;
-    height: 100%;
+    margin-top: 100px;
+    height: auto;
     width: 100%;
+    border-radius: 8px;
 }
+
 .border-line {
     border-right: 1px solid #e0e0e0;
 }
+
 .line {
     height: 1px;
     width: 45%;
     background-color: #e0e0e0;
-    margin-top: 10px;
+    margin: 10px auto;
 }
 
 .or {
-    display: flex;
     width: 10%;
     font-weight: bold;
 }
+
+.contact a svg {
+    color: #000; 
+}
+
 
 ::placeholder {
     color: #bdbdbd;
@@ -43,55 +57,100 @@
 
 input,
 textarea {
-    padding: 10px 12px;
-    border: 1px solid lightgray;
-    border-radius: 2px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     margin-top: 5px;
-    margin-top: 2px;
     width: 100%;
-    color: #138781;
+    color: #333;
     font-size: 1rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    transition: border 0.3s;
 }
 
 input:focus,
 textarea:focus {
-    box-shadow: none !important;
-    outline: 1px solid #138781 !important;
-    outline-width: 0px;
+    border: 1px solid #138781;
+    outline: none;
+    box-shadow: 0 0 5px rgba(19, 135, 129, 0.5);
 }
 
 button:focus {
-    box-shadow: none;
-    outline-width: 0px;
+    outline: none;
 }
 
 .button {
     background-color: #ff5361;
     color: white;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-top: 15px;
-    padding: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .button:hover {
-    background-color: #000;
-    color: white;
+    background-color: #e63946;
+    transform: translateY(-2px);
 }
 
+/* Media Queries for Mobile */
 @media (max-width: 600px) {
     .contact {
-    margin: 0;
-    padding: 0;
-    margin-top: 50px;
+        margin: 0;
+        padding: 20px;
+        width: 100%;
     }
     .contact .card2 {
-    margin: 0;
+        margin: 0;
     }
-
     .contact .card2 h6 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+}
+
+/* Dark Mode Styles */
+#dark .contact {
+    background-color: rgba(30, 30, 30, 0.9);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#dark .card2 {
+    background-color: rgba(50, 50, 50, 0.8);
+}
+
+#dark .contact input,
+#dark .contact textarea {
+    border: 1px solid #555;
+    background-color: rgba(50, 50, 50, 0.8); 
+    color: #fff; 
+}
+
+#dark .contact input::placeholder,
+#dark .contact textarea::placeholder {
+    color: #bdbdbd;
+}
+
+#dark .contact h6 {
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.2rem; 
+    color: #e0e0e0; 
+}
+
+#dark .contact .or {
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.1rem; 
+    color: #e0e0e0; 
+}
+
+#dark .contact a svg {
+    color: #e0e0e0; 
+}
+
+#dark .contact a svg:hover {
+    color: #00bfff; 
 }

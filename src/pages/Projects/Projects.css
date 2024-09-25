@@ -4,6 +4,12 @@
     max-width: 1200px;
     margin-left: 150px;
     width: 91%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project {
+    background-color: #fff;
+    color: #333;
 }
 
 .project h2 {
@@ -36,7 +42,7 @@
 }
 
 .custom-col {
-    flex: 0 0 calc(33.333% - 65px); /* Custom column width, adjust to fit between 4 and 3 columns */
+    flex: 0 0 calc(33.333% - 65px);
 }
 
 .card {
@@ -59,14 +65,14 @@
 .card-image {
     position: relative;
     width: 100%;
-    height: 200px; /* Fixed height for uniform images */
+    height: 200px;
     overflow: hidden;
 }
 
 .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure image covers the container */
+    object-fit: cover;
     display: block;
 }
 
@@ -84,7 +90,7 @@
 .card-image-overly {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px; /* Decreased gap between badges */
+    gap: 8px;
     justify-content: center;
     padding: 10px;
 }
@@ -139,6 +145,55 @@
     border: 2px solid #00a3a4;
 }
 
+#dark .project {
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+}
+
+#dark .project h2 {
+    color: #BB86FC;
+}
+
+#dark .project p {
+    color: #B0B0B0;
+}
+
+#dark .project hr {
+    background: linear-gradient(to right, #BB86FC, #03DAC6);
+}
+
+#dark .project .card {
+    background-color: #2A2A2A;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#dark .project .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#dark .project .card-notify-badge,
+#dark .project .card-detail-badge {
+    background-color: #CF6679;
+    color: #FFFFFF;
+}
+
+#dark .ad-title h6,
+#dark .ad-title h5 {
+    color: #FFFFFF;
+}
+
+#dark .ad-btn {
+    background: linear-gradient(90deg, #BB86FC, #03DAC6);
+    color: #000000;
+}
+
+#dark .ad-btn:hover {
+    background: linear-gradient(90deg, #03DAC6, #BB86FC);
+    color: #FFFFFF;
+    border: 2px solid #03DAC6;
+}
+
 @media (max-width: 768px) {
     #ads {
         flex-direction: column;
@@ -146,6 +201,6 @@
     }
 
     .custom-col {
-        flex: 0 0 calc(100% - 65px); /* Full width on small screens */
+        flex: 0 0 calc(100% - 65px);
     }
 }

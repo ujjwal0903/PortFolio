@@ -1,24 +1,27 @@
-#StarApp {
+.night-sky {
     position: absolute;
     top: 0;
-    left: 90px;
-    width: 92%;
-    height: 84%;
+    left: 25px;
+    width: 98%;
+    height: 100%;
     overflow: hidden;
+    z-index: 1; /* Background layer */
 }
 
 #sky {
     position: absolute;
     top: 0;
-    left: 90px;
+    left: 25px;
     width: 92%;
     height: 84%;
-    z-index: 1; /* Ensure it's above other content */
+    z-index: 1; /* Layered above background but below main content */
 }
 
+/* Stars */
 .star {
     opacity: 0.8;
     transition: opacity 0.7s linear;
+    z-index: 1; /* Same as sky */
 }
 
 #wishingstars {
@@ -27,14 +30,15 @@
     left: 90px;
     width: 92%;
     height: 84%;
-    z-index: 2; /* Ensure it's above the twinkling stars */
+    z-index: 1; /* Layered similarly to sky */
 }
 
 .wish {
     position: absolute;
-    width: 150px; /* Length of the shooting star streak */
-    height: 2px; /* Thickness of the shooting star streak */
+    width: 150px; 
+    height: 2px; 
     background: linear-gradient(45deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
     opacity: 0;
-    transform: rotate(45deg); /* Optional: for a diagonal streak effect */
+    transform: rotate(45deg); 
+    z-index: 1; /* Same as stars and sky */
 }
